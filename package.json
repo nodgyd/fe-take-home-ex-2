@@ -1,0 +1,8 @@
+{
+  "name": "fe-take-home-ex-2",
+  "description": "Take Home Exercise 2 for Frontend React Role",
+  "scripts": {
+    "build:server": "docker build -t fe-take-home-ex:2 .",
+    "run:server": "docker run -p 127.0.0.1:5050:5050/tcp fe-take-home-ex:2"
+  }
+}
