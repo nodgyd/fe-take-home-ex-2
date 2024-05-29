@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"strconv"
 	"time"
+	"net/http"
 
 	"github.com/gorilla/websocket"
 	"github.com/labstack/echo/v4"
@@ -79,9 +80,9 @@ var currencies = []Currency{
 	},
 }
 var upgrader = websocket.Upgrader{
-	CheckOrigin: func(r httpRequest) bool {
+	CheckOrigin: func(r *http.Request) bool {
 		return true
-	}
+	},
 }
 
 func ws(c echo.Context) error {

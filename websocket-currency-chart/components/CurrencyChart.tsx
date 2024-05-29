@@ -1,7 +1,7 @@
 // components/CurrencyChart.tsx
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { ChartData, ChartOptions } from 'chart.js';
+import { ChartData, TimeScale } from 'chart.js';
 
 interface CurrencyChartProps {
   data: { time: number, value: number }[];
@@ -22,18 +22,8 @@ const CurrencyChart: React.FC<CurrencyChartProps> = ({ data, name }) => {
     ],
   };
 
-  const options: ChartOptions<'line'> = {
-    scales: {
-      x: {
-        type: 'time',
-        time: {
-          unit: 'second',
-        },
-      },
-    },
-  };
 
-  return <Line data={chartData} options={options} />;
+  return <Line data={chartData} />;
 };
 
 export default CurrencyChart;
