@@ -1,0 +1,29 @@
+/* styles/Home.module.css */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .chartContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

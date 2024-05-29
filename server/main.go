@@ -78,7 +78,11 @@ var currencies = []Currency{
 		IntervalString: 1111,
 	},
 }
-var upgrader = websocket.Upgrader{}
+var upgrader = websocket.Upgrader{
+	CheckOrigin: func(r httpRequest) bool {
+		return true
+	}
+}
 
 func ws(c echo.Context) error {
 	fmt.Println("New socket")
