@@ -1,4 +1,3 @@
-// pages/index.tsx
 import React, { useState, useEffect } from 'react';
 import useWebSocket from '../hooks/useWebSocket';
 import CurrencyChart from '../components/CurrencyChart';

@@ -1,4 +1,3 @@
-// components/CurrencyChart.tsx
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart, ChartData, BarElement, CategoryScale, Title, LinearScale } from 'chart.js';
